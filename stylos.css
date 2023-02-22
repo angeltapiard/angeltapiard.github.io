@@ -1,19 +1,32 @@
+html{
+    height: auto;
+    min-height: 100%;
+}
 a{
     color: white;
     background-color: rgb(0, 146, 151);
+    border: 3px solid black;
     border-radius: 10px;
     font-size: 1.5em;
-    padding: 5px;
+    padding: 10px;
     text-decoration: none;
     display: block;
-    margin-bottom: 15px;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 20%;
 }
 h1{
-    background-color: rgba(128, 128, 128, 0.219);
-    border: 1px solid black;
-    border-radius: 10px;
+    background-color: #80808038;
+    border: 10px double rgb(0, 146, 151);
+    border-radius: 9px;
     text-align: center;
+    width: 40%;
+    display: block;
+    margin: auto;
 }
-div{
-    text-align: center;
+body {
+    background: linear-gradient(white,#21abd454);
+  }
+span{
+    text-align: left;
 }
