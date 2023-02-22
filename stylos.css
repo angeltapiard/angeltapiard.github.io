@@ -24,7 +24,10 @@ h1{
 }
 body {
     background: linear-gradient(white,#21abd454);
-  }
+}
 span{
     text-align: left;
+}
+div{
+    text-align: center;
 }
