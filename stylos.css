@@ -4,23 +4,25 @@ html{
 }
 a{
     color: white;
-    background-color: rgb(0, 146, 151);
-    border: 3px solid black;
-    border-radius: 10px;
+    background-color: #457b9d;
+    border-radius: 5px;
     font-size: 1.5em;
     padding: 10px;
     text-decoration: none;
     display: block;
     margin: auto;
     margin-bottom: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 h1{
-    background-color: #80808038;
-    border: 10px double rgb(0, 146, 151);
+    background-color: #1d3557;
+    border: 10px double white;
+    color: white;
     border-radius: 9px;
     text-align: center;
     display: block;
     margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body {
     background: linear-gradient(white,#21abd454);
@@ -30,4 +32,7 @@ span{
 }
 div{
     text-align: center;
+}
+hr{
+    border-bottom: 10px double #1d3557;
 }
