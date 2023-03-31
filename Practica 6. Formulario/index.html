@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <div>
+    <form method="post" action="#">
+		<!-- Página 1: Datos Personales -->
+        
+        <div class="recto">
+            
+            <fieldset id="pagina1" class="body">
+                <h1>Boulevard Hospital</h1>
+                <p>LLene el siguiente formulario con los datos del paciente</p>
+                <legend>Formulario - Página No. 1</legend>
+                <h2>Datos Personales</h2><br><br>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" class="tamano1"><br><br>
+                <label for="apellido">Apellidos:</label><br>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" class="tamano1"><br><br>
+                <label>Fecha de Nacimiento:</label><br>
+                <input type="date" name="fechanac" class="tamano2"><br><br>
+                <label for="cedula">Cédula:</label><br>
+                <input type="text" id="cedula" name="cedula" pattern="[0-9]{11}" required class="tamano1" placeholder="Ingrese ID"><br><br>
+                <label for="correo">E-mail:</label><br>
+                <input type="email" id="correo" name="correo" placeholder="Ingrese su E-mail" class="tamano1"><br><br>
+                <label for="phone">Número de celular:</label><br>
+                <input type="text" id="phone" pattern="[0-9]*" maxlength="10" required class="tamano1" placeholder="Ingrese su telefono"><br><br>
+                <button type="button" onclick="mostrarPagina(2)" class="button">Siguiente</button>
+            </fieldset>
+        </div>
+		
+        <!-- Página 2: Familiares -->
+        <div class="recto" >
+            <fieldset id="pagina2" style="display:none" class="body">
+                <legend>Formulario - Pagina No. 2</legend>
+                <h2>Familiares</h2><br>
+                <h3>Ingrese los datos de tres familiares</h3>
+                <hr/>
+                <P>Familiar #1</P>
+                <label for="nombreFamiliar1">Nombre completo:</label><br>
+                <input type="text" id="nombreFamiliar1" name="nombreFamiliar1" placeholder="Ingrese su nombre" class="tamano1"><br><br>
+                <label for="edadFamiliar1">Edad:</label>
+                <input type="number" id="edadFamiliar1" name="edadFamiliar1" min="1" max="100"><br><br>
+                <label for="parentescoFamiliar1">Parentesco:</label>
+                <select id="parentescoFamiliar1" name="parentescoFamiliar1">
+                    <option value="">--Selecciona parentesco--</option>
+                    <option value="madre">Madre</option>
+                    <option value="padre">Padre</option>
+                    <option value="hermano">Hermano</option>
+                    <option value="hermana">Hermana</option>                    
+                </select><br><br>
+
+                <hr/>
+                <P>Familiar #2</P>
+                <label for="nombreFamiliar2">Nombre completo:</label><br>
+                <input type="text" id="nombreFamiliar2" name="nombreFamiliar2" placeholder="Ingrese su nombre" class="tamano1"><br><br>
+                <label for="edadFamiliar2">Edad:</label>
+                <input type="number" id="edadFamiliar2" name="edadFamiliar2" min="1" max="100"><br><br>
+                <label for="parentescoFamiliar2">Parentesco:</label>
+                <select id="parentescoFamiliar2" name="parentescoFamiliar2">
+                    <option value="">--Selecciona parentesco--</option>
+                    <option value="madre">Madre</option>
+                    <option value="padre">Padre</option>
+                    <option value="hermano">Hermano</option>
+                    <option value="hermana">Hermana</option>                    
+                </select><br><br
+                <hr/>
+                <P>Familiar #3</P>
+                <label for="nombreFamiliar2">Nombre completo:</label><br>
+                <input type="text" id="nombreFamiliar3" name="nombreFamiliar3" placeholder="Ingrese su nombre" class="tamano1"><br><br>
+                <label for="edadFamiliar3">Edad:</label>
+                <input type="number" id="edadFamiliar3" name="edadFamiliar3" min="1" max="100"><br><br>
+                <label for="parentescoFamiliar3">Parentesco:</label>
+                <select id="parentescoFamiliar3" name="parentescoFamiliar3">
+                    <option value="">--Selecciona parentesco--</option>
+                    <option value="madre">Madre</option>
+                    <option value="padre">Padre</option>
+                    <option value="hermano">Hermano</option>
+                    <option value="hermana">Hermana</option>                    
+                </select><br><br>
+                
+                <button type="button" onclick="mostrarPagina(1)">Anterior</button>
+                <button type="button" onclick="mostrarPagina(3)">Siguiente</button>
+            </fieldset> 
+        </div>
+
+		<!-- Página 3: Condiciones Pre-Existentes de Salud -->
+        <div class="recto">
+            <fieldset id="pagina3" style="display:none" class="body">
+                <legend>Formulario - Pagina No. 3</legend>
+                <h2>Condiciones Pre-Existentes de Salud</h2><br>
+                <label for="enfermedad">Enfermedad:</label><br>
+                <select id="enfermedad" name="enfermedad">
+                    <option value="" class="tamano1">--Selecciona enfermedad--</option><br><br><br>
+                    <option value="enfermedad-cardiaca-isquemica">Enfermedad Cardíaca Isquémica o Coronaria</option>
+                    <option value="accidente-cerebrovascular">Accidente Cerebrovascular</option>
+                    <option value="influenza">Influenza o Gripe</option>
+                    <option value="neumonia">Neumonía</option>
+                    <option value="bronquitis">Bronquitis</option>
+                    <option value="tuberculosis">Tuberculosis</option>
+                    <option value="epoc">Enfermedad Pulmonar Obstructiva Crónica</option>
+                    <option value="cancer-respiratorio">Cánceres Respiratorios</option>
+                    <option value="diabetes">Diabetes</option>
+                    <option value="alzheimer">Enfermedad de Alzheimer</option>
+                    <option value="cirrosis-hepatica">Cirrosis Hepática</option>
+                    <option value="enfermedad-renal-cronica">Enfermedad Renal Crónica</option>
+                    <option value="artritis-reumatoide">Artritis Reumatoide</option>
+                    <option value="osteoartritis">Osteoartritis</option>
+                    <option value="hipertension-arterial">Hipertensión Arterial</option>
+                </select><br><br>
+                <label for="duration">Tiempo con la Enfermedad:</label><br>
+                <input type="text" id="duration" name="duration" class="tamano1"><br><br>
+                <label for="details">Detalle:</label><br>
+                <textarea id="details" name="details" style="width: 350px; height: 100px;"></textarea><br><br>
+                <button type="button" onclick="mostrarPagina(2)">Anterior</button>
+                <button type="button" onclick="mostrarPagina(4)">Siguiente</button>
+            </fieldset>
+        </div>
+
+
+		<!-- Página 4: Internamientos Realizados -->
+        <div class="recto">
+            <fieldset id="pagina4" style="display:none" class="body">
+                <legend>Formulario - Pagina No. 4</legend>
+                <h2>Internamientos Realizados</h2>
+                <label for="hospitalizations">Internamientos Realizados:</label><br>
+                <input type="text" id="hospitalizations" name="hospitalizations" class="tamano1"><br><br>
+                <label for="date">Fecha:</label><br>
+                <input type="date" id="date" name="date" class="tamano2"><br><br>
+                <label for="medical-center">Centro Médico:</label><br>
+                <input type="text" id="medical-center" name="medical-center" class="tamano1"><br><br>
+                <label for="diagnosis">Diagnóstico:</label><br>
+                <input type="text" id="diagnosis" name="diagnosis" class="tamano1"><br><br>
+                <button type="button" onclick="mostrarPagina(3)">Anterior</button>
+                <button type="button" onclick="mostrarPagina(5); mostrarDatos()">Enviar</button>
+            </fieldset>
+        </div>
+
+        <div class="recto">
+            <fieldset id="pagina5" style="display:none" class="body" style="width: 300px;">
+                <legend>DATOS REGISTRADOS</legend>
+
+            </fieldset>
+        </div>
+
+	</form>
+</div>
+
+	<script type="text/javascript" src="formulario.js"> </script>
+</body>
+</html>
