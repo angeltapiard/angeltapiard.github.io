@@ -38,6 +38,7 @@ button:hover {
     border: 3px solid green;
     padding: 30px;
     background-color: white;
+    border-radius: 50px;
 }
 #qrcode {
     display: flex;
