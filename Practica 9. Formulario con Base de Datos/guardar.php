@@ -1,12 +1,12 @@
 <?php
 //conectamos con el servidor
-$conectar = mysqli_connect('localhost', 'root', '', 'prueba');
+$conectar = mysqli_connect('aws.connect.psdb.cloud', 'rfgg5da3qbjrsy9p3800', 'pscale_pw_gZ5GVKcSoyl3Ua8EiyFJZXP7L8CykzCEhmWE0v7Ib2u', 'prueba');
 
 //verificamos la conexion
 if (!$conectar) {
-    echo "No se pudo conectar con la base de datos";
+ echo "No se pudo conectar con la base de datos";
 } else {
-    echo "Conexión exitosa";
+ echo "Conexión exitosa";
 }
 
 //recuperar las variables
@@ -22,8 +22,9 @@ $ejecutar = mysqli_query($conectar, $sql);
 
 //verificamos la ejecucion
 if (!$ejecutar) {
-    echo "Hubo un error";
+ echo "Hubo un error";
 } else {
-    echo "<br>Datos enviados<br><a href='index.html'>Volver</a>";
+ echo "<br>Datos enviados<br><a href='index.html'>Volver</a>";
 }
+
 ?>
