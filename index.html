@@ -3,23 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programas - Angel M. Tapia</title>
     <link href="stylos.css" rel="stylesheet"/>
-</head>
+</head> 
 <body>
-    <h1>Proyectos Programacion III</h1>
+    <h1>Proyectos Lab. de Programacion III</h1>
     <hr/>
-    <div>
-        <a href="Practica 1. HTML/index.html"><span>1.</span> Biografía y Horario de Clases</a>
-        <a href="Práctica 2. Etiquetas en HTML/index.html"><span>2.</span> 102 Etiquetas de HTML</a>
-        <a href="Practica 3. Menu CSS/menu.html"><span>3. </span>Menu con CSS</a>
-        <a href="Practica 4. Validador de Cedula/index.html"><span>4. </span>Validador de Cédula</a>
-        <a href="Practica 5. Menú Dinamico con JSON/index.html"><span>5. </span>Menú con JSON</a>
-        <a href="Practica 6. Formulario/index.html"><span>6. </span>Formulario con Múltiples Páginas</a>
-        <a href="Practica 7. Formulario QR/index2.html"><span>7. </span>Formulario QR</a>
-        <a href="Practica 8. Graficos/index.html"><span>8. </span>Graficos</a>
-        <a href="Formulario/index.html"><span>9. </span>Formulario BD</a>
-    </div>
+
+    <script>
+        // Carga el archivo JSON
+    fetch('menu.json')
+    .then(response => response.json())
+    .then(data => {
+        // Genera el menú
+        let menu = document.createElement('ul');
+        menu.className = 'menu'; // Agrega la clase CSS 'menu' al elemento 'ul'
+        for (let item of data.items) {
+            let menuItem = document.createElement('li');
+            menuItem.className = 'menu-item'; // Agrega la clase CSS 'menu-item' al elemento 'li'
+            let link = document.createElement('a');
+            link.href = item.url;
+            link.textContent = item.name;
+            menuItem.appendChild(link);
+            menu.appendChild(menuItem);
+        }
+        document.body.appendChild(menu);
+    });
+    </script>
 </body>
 </html>
