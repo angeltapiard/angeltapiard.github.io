@@ -24,6 +24,6 @@ $ejecutar = mysqli_query($conectar, $sql);
 if (!$ejecutar) {
     echo "Hubo un error";
 } else {
-    echo "<br>Datos enviados<br><a href='index.html'>Volver</a>";
+    echo "<br>Datos enviados<br><a href='https://angeltapiard.github.io/Practica%209.%20Formulario%20con%20Base%20de%20Datos/Formulario/index.html'>Volver</a>";
 }
 ?>
