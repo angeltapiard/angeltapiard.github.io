@@ -1,6 +1,6 @@
 <?php
 //conectamos con el servidor
-$conectar = mysqli_connect('aws.connect.psdb.cloud', 'rfgg5da3qbjrsy9p3800', 'pscale_pw_gZ5GVKcSoyl3Ua8EiyFJZXP7L8CykzCEhmWE0v7Ib2u', 'prueba');
+$conectar = mysqli_connect('aws.connect.psdb.cloud', '9y9krlz6dnxx3mnx8yh2', 'pscale_pw_PJrQj1kuXZ0SxXoi7NHSFiDynZpUcNnoaMDPWzTjKUA', 'prueba');
 
 //verificamos la conexion
 if (!$conectar) {
