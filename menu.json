@@ -1,0 +1,45 @@
+{
+    "title": "Proyectos Programacion III",
+    "items": [
+        {
+            "name": "1. Biografía y Horario de Clases",
+            "url": "Practica 1. HTML/index.html"
+        },
+        {
+            "name": "2. 102 Etiquetas de HTML",
+            "url": "Práctica 2. Etiquetas en HTML/index.html"
+        },
+        {
+            "name": "3. Menu con CSS",
+            "url": "Practica 3. Menu CSS/menu.html"
+        },
+        {
+            "name": "4. Validador de Cédula",
+            "url": "Practica 4. Validador de Cedula/index.html"
+        },
+        {
+            "name": "5. Menú con JSON",
+            "url": "Practica 5. Menú Dinamico con JSON/index.html"
+        },
+        {
+            "name": "6. Formulario con Múltiples Páginas",
+            "url": "Practica 6. Formulario/index.html"
+        },
+        {
+            "name": "7. Formulario QR",
+            "url": "Practica 7. Formulario QR/index2.html"
+        },
+        {
+            "name": "8. Graficos",
+            "url": "Practica 8. Graficos/index.html"
+        },
+        {
+            "name": "9. Formulario con BS",
+            "url": "Practica 9. Formulario con Base de Datos/Formulario/index.html"
+        },
+        {
+            "name": "10. Servicio Web - Cedula",
+            "url": "Practica 10. Validador de Cedula con API/index.html"
+        }
+    ]
+}
