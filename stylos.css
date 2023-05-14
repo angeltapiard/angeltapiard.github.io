@@ -55,3 +55,17 @@ hr{
     border-bottom: 4px solid #1d3557;
     width: 650px;
 }
+p{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #0cbdee7a;
+    width: 375px;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 50px;
+    border: 2px solid black;
+    color: darkgreen;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
