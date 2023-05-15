@@ -57,15 +57,11 @@ hr{
 }
 p{
     text-align: center;
-    font-weight: bold;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #0cbdee7a;
-    width: 375px;
+    padding: 0;
+    border-radius: 300px;
+    margin: 5px;
     margin: 0 auto;
-    padding: 5px;
-    border-radius: 50px;
-    border: 2px solid black;
-    color: darkgreen;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    background-color: #0cbdee46;
+    width: 650px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
